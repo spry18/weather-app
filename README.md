@@ -1,50 +1,60 @@
-# Welcome to your Expo app 👋
+# 🌤️ Weather App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A responsive React Native app that shows current weather and allows searching for city forecasts with dynamic background images.
 
-## Get started
+## 🚀 Technologies Used
+- React Native (Expo)
+- TypeScript
+- Expo Router
+- OpenWeatherMap API
 
-1. Install dependencies
+## 🎨 Design Rationale
+
+The app uses a clean and minimalist UI with weather-based background images to enhance the visual experience. Responsive design elements were added using `useWindowDimensions` for consistent performance across devices.
+
+## 🧑‍💻 How to Run the App Locally
+
+1. Clone the Repository
+   ```bash
+   git clone https://github.com/spry18/weather-app.git
+   cd weather-app
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the app
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Open in Expo Go App
+
+Scan the QR code using the Expo Go app (available on Android/iOS).
+
+Alternatively, use:
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Usability Heuristics Focused
 
-When you're ready, run:
+1. Visibility of System Status
+   - Shows loading indicators during data fetch.
+   - Displays error messages when city is not found or input is missing.
 
-```bash
-npm run reset-project
-```
+2. Match Between System & Real World
+   - Weather info presented using familiar terms (°C, km/h).
+   - Background images visually represent real-world weather conditions.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. User Control and Freedom
+   - Clear input field with retry and refresh options.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Aesthetic and Minimalist Design
+   - Simple layout, readable text, minimal visual clutter.
